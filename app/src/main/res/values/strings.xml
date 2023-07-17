@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lesson_3.7</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_fruit">Fruits</string>
+    <string name="tv_kiwi">Kiwi</string>
+    <string name="tv_healthy_kiwi">     Kiwi is an exotic fruit with bright green flesh and small black seeds.Kiwifruit is an excellent source of vitamin C, which is a powerful antioxidant and helps support the immune system. It also contains vitamin K, vitamin E, vitamin A and B vitamins, as well as minerals including potassium, magnesium and copper.</string>
+    <string name="add_fruit">Add fruit</string>
+    <string name="input_name_fruit">Input name fruit</string>
+    <string name="link_to_photo">Link to photo</string>
+</resources>

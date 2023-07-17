@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:orientation="vertical"
+    tools:context=".FruitFragment">
+
+    <TextView
+        android:id="@+id/tv_fruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:text="@string/tv_fruit"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:typeface="monospace" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_fruit"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:spanCount="4"
+        tools:listitem="@layout/item_fruit" />
+
+    <Button
+        android:id="@+id/btn_add_fruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="@string/add_fruit"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_link_to_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round"
+        android:hint="@string/link_to_photo"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round"
+        android:hint="@string/input_name_fruit"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/burgundy"
+        android:padding="16dp"
+        android:text="@string/add_fruit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="15dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
