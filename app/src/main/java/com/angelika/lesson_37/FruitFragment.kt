@@ -63,7 +63,7 @@ class FruitFragment : Fragment() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        
+
     }
 
     override fun onDestroyView() {

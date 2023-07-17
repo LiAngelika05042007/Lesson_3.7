@@ -77,7 +77,7 @@ class AddingFruitFragment : Fragment() {
             arguments.putString(FruitFragment.URL_KEY, url)
             arguments.putString(FruitFragment.NAME_KEY, newNameFruit)
             parentFragmentManager.beginTransaction()
-                .add(R.id.fragment_container, FruitFragment::class.java,arguments)
+                .add(R.id.fragment_container, FruitFragment::class.java, arguments)
                 .commit()
         }
     }

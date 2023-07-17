@@ -8,9 +8,9 @@ import com.bumptech.glide.Glide
 
 class FruitAdapter : RecyclerView.Adapter<FruitAdapter.FruitViewHolder>() {
 
-     private val fruits = arrayListOf<Fruit>()
+    private val fruits = arrayListOf<Fruit>()
 
-    fun addImage(fruit: Fruit){
+    fun addImage(fruit: Fruit) {
         fruits.add(fruit)
         notifyDataSetChanged()
     }
@@ -32,7 +32,7 @@ class FruitAdapter : RecyclerView.Adapter<FruitAdapter.FruitViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: FruitViewHolder, position: Int) {
-    holder.onBind(fruits[position])
+        holder.onBind(fruits[position])
     }
 
     override fun getItemCount(): Int {
